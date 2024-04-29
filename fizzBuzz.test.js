@@ -12,4 +12,8 @@ describe("fizzBuzz", () => {
     const result = fizzBuzz(10);
     expect(result).toBe("buzz");
   });
+  test("should return buzz if number is divisible by both 3 and 5", () => {
+    const result = fizzBuzz(15);
+    expect(result).toBe("fizzbuzz");
+  });
 });
