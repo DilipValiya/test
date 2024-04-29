@@ -2,7 +2,7 @@ const fizzBuzz = require("./fizzBuzz");
 
 describe("fizzBuzz", () => {
   test("fizzBuzz function exist", () => {
-    fizzBuzz();
+    fizzBuzz(10);
   });
   test("should return fizz if number is divisible by 3", () => {
     const result = fizzBuzz(6);
@@ -15,5 +15,9 @@ describe("fizzBuzz", () => {
   test("should return buzz if number is divisible by both 3 and 5", () => {
     const result = fizzBuzz(15);
     expect(result).toBe("fizzbuzz");
+  });
+  test("should return number in string formate if number is nigher divisible by 3 nor by 5", () => {
+    const result = fizzBuzz(7);
+    expect(result).toBe("7");
   });
 });
