@@ -8,4 +8,8 @@ describe("fizzBuzz", () => {
     const result = fizzBuzz(6);
     expect(result).toBe("fizz");
   });
+  test("should return buzz if number is divisible by 5", () => {
+    const result = fizzBuzz(10);
+    expect(result).toBe("buzz");
+  });
 });
